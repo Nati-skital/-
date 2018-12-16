@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "יצחק לוי",
+      "phone": "058-6428967",
+      "job": "מכירות", 
+      "employe_number": 1111,
+      "car_number": 1234567
+    },
+    {
+      "id": 2,
+      "name": "יעקב פאר",
+      "phone": "058-4265873",
+      "job": "סדרן", 
+      "employe_number": 2222,
+      "car_number": 8910234
+    },
+    {
+      "id": 3,
+      "name": "אסתר גונן",
+      "phone": "058-8421762",
+      "job": "הנהלת חשבונות", 
+      "employe_number": 3333,
+      "car_number": 5678910
+    },
+    {
+      "id": 4,
+      "name": "אברהם רצון",
+      "phone": "058-8546854",
+      "job": "לוגיסטיקה", 
+      "employe_number": 4444,
+      "car_number": 1123456
+    },
+    {
+      "id": 5,
+      "name": "ליאת אהרונוב",
+      "phone": "058-1478523",
+      "job": "רואה חשבון", 
+      "employe_number": 5555,
+      "car_number": 6475189
+    }
+  ]
+}

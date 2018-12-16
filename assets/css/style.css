@@ -1,0 +1,186 @@
+:root{
+  --light: #fff;
+  --orange:orange; 
+  --tinySise: 0.5rem; 
+  --smallSise: 1rem; 
+}
+
+/* js elements */
+.err{background-color: red;}
+.success{background-color: green;}
+
+/* utility classes */ 
+.center{text-align: center;}
+
+/* Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Tahoma, sans-serif;
+  line-height: 1.6;
+  background-image: url("https://media.giphy.com/media/110dhxfJebYOTm/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  color: var(--light);
+}
+
+.container{
+  width: 85%;
+  margin: 5vh auto;
+  background-color: black;
+  border-radius: var(--radius);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #ccc dashed;  
+}
+
+.login{
+  width: 10%;
+  padding: var(--tinySise);
+}
+
+.active{
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(37, 202, 37);
+  border-radius: 50%;
+  animation: flickering 2s infinite;
+}
+
+@keyframes flickering{
+  0%{transform: scale(.7)}
+  30%{transform: scale(.8)}
+  60%{transform: scale(.9)}
+  80%{transform: scale(1)}
+  90%{transform: scale(.9)}
+  100%{transform: scale(.8)}
+}
+
+.heading{flex: 1;}
+
+.date{padding: var(--tinySise);}
+/*-------------------------------------------*/
+.title{padding: var(--smallSise);}
+
+.auto::before{
+  content: "שם";
+  color: var(--orange);
+  animation: changeword 7s infinite;
+}
+
+@keyframes changeword{
+  0%{content: "שם";}
+  50%{content: "מספר טלפון";}
+  100%{content: "מספר רכב";}
+}
+
+/* search div*/
+.search{padding: var(--smallSise);}
+
+/* input */
+#search, select{
+  margin: var(--smallSise);
+  padding: .3rem;
+  background-color: #f4f4f4;
+  outline: none;
+  border-radius: var(--tinySise);
+}
+
+/*-----------------------------------*/
+.result{padding: 2rem;}
+
+table{margin: 0 auto;}
+
+table th{padding-left: 10rem;}
+
+
+.clear-all{
+  padding: var(--smallSise);
+  margin:var(--smallSise);
+}
+
+.btn-filed > .btn{padding: var(--smallSise) 1.5rem;}
+
+.btn{
+  display: inline-block;
+  margin: var(--tinySise);
+  background-color:  var(--orange);
+  color: var(--light);
+  border: none;
+  border-radius: var(--tinySise);
+  text-decoration: none;
+  padding: 1.1rem 1.2rem;
+  font-weight: bold;
+  transition: transform .2s;
+  box-shadow: .3rem .3rem var(--orange);
+}
+
+.btn:hover{
+  cursor: pointer;
+  box-shadow: .2rem .2rem var(--orange);
+}
+
+.btn:active{
+  border: none;
+  outline: none;
+  transform: scale(.99); 
+  box-shadow: .1rem .1rem var(--orange);
+}
+
+/*--footer--*/
+footer{
+  padding: var(--smallSise);
+  color: var(--light);
+  background-color: rgb(27, 26, 26);
+}
+
+
+#message{
+  width: 50%;
+  margin: 0 auto; 
+  padding: var(--smallSise); 
+  border-radius: var(--tinySise);
+  letter-spacing: 1px;
+  color: var(--light);
+  text-align: center; 
+}
+
+
+/*-------media queries-------*/
+
+@media(max-width:800px){
+  body{font-size: 1.2rem;}
+  table th{padding-left: 6rem;}
+}
+
+@media(max-width:40rem){
+  body{font-size: var(--smallSise);}
+
+  button, input, select {font-size: inherit;}
+  
+  table{
+    margin: 0 auto;
+    font-size: var(--smallSise);
+  }
+
+  table th{padding-left: 5rem;}  
+}
+
